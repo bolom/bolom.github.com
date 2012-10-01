@@ -5,6 +5,6 @@ layout: blog
 <article>
      <aside>{{ post.date  | date: "%B %e, %Y" }}</aside>
      <h1 class="post-title"><a title="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a></h1>
-	 <p>{{ post.content | strip_html | truncate: 170 }}</p>
+	 <p>{{ post.content }}</p>
  </article>
 {% endfor %}
