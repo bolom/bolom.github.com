@@ -28,33 +28,28 @@
     <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
   </head>
   <body>
-	
-	  <div class="wrapper">
-		  <div class="container-fluid" >
-			  
-			  <div class="row-fluid" style="min-height: 100%;">
-				  <div class="span8" id="posts">
+	  <div class="container-fluid" >
+		  <div class="row-fluid">
+			  <div class="span3" id="social">
+				  <ul>
+					  <li><a href="http://lordalxworks.com/" class="law">lordalexworks inc</a></li>
+					  <li><a href="http://twitter.com/{{ site.twitter.username }}" class="twitterbird">@bolomichelin</a></li>
+					  <li><a href="https://github.com/{{ site.github.username }}" class="github">github</a></li>
+				  </ul>
+			  </div>
+			  <div class="span8" id="posts">
 				  <header>
 					  <ul class="nav nav-pills">
-					  	<li><a href="/">me</a></li>
-					  	<li><a href="/blog">blog</a></li>
-						<li> <a class="obfs-email" title="hello at bolomichelin dot com">say hello</a></li>
+						  <li><a href="/">me</a></li>
+						  <li><a href="/blog">blog</a></li>
+						  <li> <a class="obfs-email" title="hello at bolomichelin dot com">say hello</a></li>
 					  </ul>
-				   </header>
+				  </header>
 				  <!-- POSTS -->
-					  {{ content }}
-				  </div><!--/span8-->
-			  </div><!--/.fluid-container-->
-			  <div class="push"><!--//--></div>
-		  </div><!--/wrappe -->
-		  
-		  <footer>
-		        <div class="container-fluid">
-  		          <a href="http://lordalxworks.com/"><img src="/img/law_logo_small.png" /></a>
-				  <a href="http://twitter.com/{{ site.twitter.username }}"><img src="/img/twitter_small.png" ></a>
-				  <a href="https://github.com/{{ site.github.username }}"><img src="/img/github_small.png" ></a>
-		        </div>
-		   </footer>
+				  {{ content }}
+			  </div><!--/span8-->
+		  </div><!--/row-->
+	  </div><!--/.fluid-container-->
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
