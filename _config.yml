@@ -1,0 +1,13 @@
+markdown: rdiscount
+pygments: true
+
+domain: bolomichelin.com
+title: Bolo Michelin - Mwen ké baw' &hearts;
+author: Me
+email: hello@bolomichelin.com
+
+github:
+  username: bolom
+
+twitter:
+  username: bolomichelin
