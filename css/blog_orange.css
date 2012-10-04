@@ -1,0 +1,119 @@
+  * { padding: 0; margin: 0; }
+  html, body {height: 100%;}
+  html{
+  	font-family:  Helvetica, Arial, "Lucida Grande", sans-serif;
+   	font-style: normal; font-weight: 400;
+  	text-rendering: optimizeLegibility; }
+
+  body {
+    background-color: black;
+     color:white;
+     font-size: 1.1rem; line-height: 2rem;
+   }
+
+  h1 a:hover{ color:white; text-decoration: none; border:none}
+  h1 {font-size: 2rem; color: white line-height: 2.5rem;font-style: normal; font-weight: 700;  }
+  h2 {font-size: 1.5rem; color: white; line-height: 2.5rem;font-style: normal; font-weight: 700;  }
+  h1,h2{color: orange}
+
+    // POST
+aside{color: #ccc ; font-size:1rem}
+.post a  {color:white; padding-bottom: 5px;}
+.post  a { color:white; text-decoration: none; border-bottom: 2px solid orange }
+.post  a:hover { color:white; text-decoration: none; border-bottom: 2px solid white }
+.post  a img { text-decoration: none; }
+
+
+.post {margin: 0 auto;float:none;}
+.post  ul{list-style: none; margin:0; pading:0;margin-bottom: 5px; margin-top: 5px;}
+.post  li{line-height: 1.5rem; }
+
+blockquote{border-color:  orange;}
+article {border-bottom: 1px solid #f0f0f0;}
+article aside {float: right;}
+
+  .nav-tabs > li > a,
+  .nav-pills > li > a {
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: 2px;
+    line-height: 14px;
+  }
+  .nav > li > a {
+    color:white;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: black;
+    text-align: center;
+  }
+  .nav > li > a:hover {
+    color:white;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: orange;
+    border: none;
+  }
+
+  /* Socia link */
+
+
+  @media  (max-width: 768px) {
+  	#social ul
+  	{
+          position: absolute;
+  	    top: 0;
+  	    right:0;
+  	}
+
+  }
+
+  @media (min-width: 768px){
+  	#social ul
+  	{
+  	    position: absolute;
+  		 bottom: 0;
+  		 left:0;
+  	}
+
+  }
+  #social li {
+
+  	list-style: none;
+  	float:left;
+  }
+  #social a {
+   width: 45px;
+   height:45px;
+   display:block;
+   text-indent: -99999px;
+  }
+
+  .github {
+   background:transparent url('/img/github_small_orange.png') center top no-repeat;
+  }
+
+  .github:hover {
+     background-image: url('/img/github_small_white.png');
+  }
+
+  .law {
+   background:transparent url('/img/law_logo_small_orange.png') center top no-repeat;
+  }
+
+  .law:hover {
+     background-image: url('/img/law_logo_small_white.png');
+  }
+
+
+  .twitterbird {
+   background:transparent url('/img/twitter_small_orange.png') center top no-repeat;
+  }
+
+  .twitterbird:hover {
+     background-image: url('/img/twitter_small_white.png');
+  }
+
+
+
+
+
