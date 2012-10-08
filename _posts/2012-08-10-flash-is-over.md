@@ -22,7 +22,8 @@ Perhaps not by accident, TypeScript's type annotations are quite similar to thos
 Wasn't it your job to do that ?
 
 
-I may repeat myself but I want to be a part of the future and you're the past. You know, I have new friends now : Objective-c, HTML/CSS/JS, SDK kinnect, Ruby and ...I wish you all the best but it's over between us.
+I may repeat myself but I want to be a part of the future and you're the past. You know, I have new friends now : Objective-c, HTML/CSS/JS, SDK kinnect, Ruby and ...
+I wish you all the best but it's over between us.
 
 Bolo
 
