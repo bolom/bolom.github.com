@@ -1,2 +1,0 @@
-Flash is over !
-
