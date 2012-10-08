@@ -28,15 +28,10 @@
     <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
   </head>
   <body>
+    <div id="wrap">
 	  <div class="container-fluid" >
+                  <!-- header and content -->
 		  <div class="row-fluid">
-			  <div class="span3" id="social">
-				  <ul>
-					  <li><a href="http://lordalxworks.com/" class="law">lordalexworks inc</a></li>
-					  <li><a href="http://twitter.com/{{ site.twitter.username }}" class="twitterbird">@bolomichelin</a></li>
-					  <li><a href="https://github.com/{{ site.github.username }}" class="github">github</a></li>
-				  </ul>
-			  </div>
 			  <div class="span8" id="posts">
 				  <header>
 					  <ul class="nav nav-pills">
@@ -49,7 +44,16 @@
 				  {{ content }}
 			  </div><!--/span8-->
 		  </div><!--/row-->
+              <div id="push"></div>
 	  </div><!--/.fluid-container-->
+      </div><!-- end wrap -->
+      <div id="footer">
+            <ul>
+                    <li><a href="http://lordalxworks.com/" class="law">lordalexworks inc</a></li>
+                    <li><a href="http://twitter.com/{{ site.twitter.username }}" class="twitterbird">@bolomichelin</a></li>
+                  <li><a href="https://github.com/{{ site.github.username }}" class="github">github</a></li>
+          </ul>
+      </div>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
