@@ -8,7 +8,7 @@ I am a developer for 10 years now. I discovered Flash Macromedia in year 2000 du
 
 Thanks to you, Flash I've worked in several places in the world and for different prestigious clients.
 
-Thanks to you, Flash I've built games, interactive kiosks, websites, mobile apps, photo galleries for blu ray player and lot of other things, i don't even remember.
+Thanks to you, Flash I've built games, interactive kiosks, websites, mobile apps, photo galleries for Blu-ray player and lot of other things, i don't even remember.
 
 Despite our good times, I'm sorry, but I don’t agree with your recent choices. I don't like your new tools. I don't like your new philosophy. You're not the future anymore... but the past.
 
