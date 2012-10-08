@@ -28,7 +28,7 @@ aside{color: #ccc ; font-size:1rem}
 .post  ul{list-style: none; margin:0; pading:0;margin-bottom: 5px; margin-top: 5px;}
 .post  li{line-height: 1.5rem; }
 
-blockquote{border-color:  orange;}
+blockquote{border-color:  orange; margin-top: 30px;margin-bottom: 30px}
 article {border-bottom: 1px solid #f0f0f0;}
 article aside {float: right;}
 
