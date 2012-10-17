@@ -1,4 +1,4 @@
-<!-- 
+<!--
 	Credits
 http://www.growcase.com/2011/11/friday-freebie-the-social-gunman-icons-concept/
 http://dbox.tumblr.com/post/5426249009/instagram-filters-as-photoshop-actions
@@ -27,7 +27,6 @@ Thanks All I love u
 |________...______,"
 
 -->
-
 <!doctype html>
 <html>
 <head>
@@ -41,43 +40,70 @@ Thanks All I love u
 	<meta name="robots" content="all" />
 	<meta name="MSSmartTagsPreventParsing" content="true" />
 	<meta http-equiv="imagetoolbar" content="false" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <link href="/css/bootstrap.css" rel="stylesheet">
+      <link href="/css/home.css" rel="stylesheet">
+      <link href="/css/bootstrap-responsive.css" rel="stylesheet">
 	<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->	
-		<link href="/css/style.css" rel="stylesheet">
+	<![endif]-->
 	</head>
-	<body>
-		{{ content }}
-		<!--include jquery & backstretch-->
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-		<script type="text/javascript" src="/js/jquery.backstretch.min.js"></script>
-		<script type="text/javascript">
-			$(function(){
-				
-				var strings = ["/img/bolomichelin.jpg","/img/bolomichelin2.jpg"];
-				var randomIndex = Math.floor(Math.random() * strings.length);
+  <body>
+    <div id="wrap">
+      <div class="container-fluid">
+        <div class="row-fluid" id="name">
+  <header><h1>Bolo <br/> Michelin</h1></header>
+</div>
+<hr>
+<div class="row-fluid" id="bio">
+  <div class="span3">
+    <h2>Sa ou fè?</h2>
+    <p >My name is Bolo Michelin, and I'm a developer. If you want to, you can send me an email at <a class="obfs-email" title="hello at bolomichelin dot com">hello at bolomichelin dot com</a> or read my <a href="/blog">blog</a>.<p/>
+    </div>
+  <div class="span3"><h2>Sa mwen ka fè</h2>
+    <p>I am partner and developer at <a href="http://www.lordalexworks.com">lordalexworks inc</a>, a shop that makes great multi-platform experiences with &hearts; in Montreal.</p>
+    <p>I used to work for weXpay as lead programmer for 3 years. We developed an online payment system that allow internet users to pay in cash online.</p>
+<p>Before that, I worked for GoldenPot as a game programmer. I wrote games in actionscript.</p></div>
+  <div class="span3"><h2>An lòt bagaÿ anlè mwen</h2>
+    <p>I am member of "the office" at <a href="http://girlzinweb.com/">Girlz in the web</a>, a network of professionals women.</p></div>
+  <div class="span3"><h2>Pastan mwen</h2>
+    <p>I'm not in the office, I spend my time exploring the world. I'm a travel addict (my friends jokingly call me "the travel agent"). It's a true passion since my childhood. I already visited Spain, USA, Canada, Argentina, Germany, UK, Taiwan, Finnmark... (to be continued).</p>
+  </div>
+</div>
+      </div>
+      <div id="push"></div>
+    </div>
+    <div id="footer">
+      <ul>
+            <li><a href="http://lordalxworks.com/" class="law">lordalexworks inc</a></li>
+            <li><a href="http://twitter.com/{{ site.twitter.username }}" class="twitterbird">@bolomichelin</a></li>
+            <li><a href="https://github.com/{{ site.github.username }}" class="github">github</a></li>
+          </ul>
+        </div>
+         <!--include jquery & backstretch-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $(window).resize(function(){
+          if($(this).width() >= 767){
+            $.backstretch("/img/bolomichelin4.jpg", {speed: 150});
+          }
+        })
+        .resize();//trigger resize on page load
+      });
 
-				
-				$(window).resize(function(){
-					if($(this).width() >= 767){
-						$.backstretch(strings[randomIndex], {speed: 150});
-					}
-				})
-				.resize();//trigger resize on page load
-			});
-			
-  		  var _gaq = _gaq || [];
-  		  _gaq.push(['_setAccount', 'UA-35174639-1']);
-  		  _gaq.push(['_trackPageview']);
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-35174639-1']);
+        _gaq.push(['_trackPageview']);
 
-  		  (function() {
-  		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  		  })();
-			
-		</script>
-		<script type="text/javascript" src="/js/application.js"></script>
-</body>	
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <script type="text/javascript" src="/js/application.js"></script>
+  </body>
 </html>

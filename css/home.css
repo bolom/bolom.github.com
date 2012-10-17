@@ -1,0 +1,50 @@
+html, body {height: 100%;}
+* { padding: 0; margin: 0; }
+body {background-color: #ffa500;color: white;font-style: normal; font-weight: 400;text-rendering: optimizeLegibility;font-family: Helvetica, Arial, sans-serif; }
+h1,h2,p{margin:0;padding:0; -webkit-font-smoothing: antialiased; }
+h2,p{padding-left: 20px;padding-right: 20px}
+h2{color:orange;}
+h2{margin-top: 20px}
+p {color:white;font-size: 1rem; line-height: 1.6rem; text-align: justify;}
+header{ margin-top: 50px;}
+ a { color:white; text-decoration: none; padding-bottom : 1px;border-bottom:2px solid orange }
+ a:hover { text-decoration: none; border-color: orange  ; color:orange;}
+
+footer a {
+   width: 45px;
+   height:45px;
+   display:block;
+   text-indent: -99999px;
+}
+footer li {list-style: none;float:right;}
+.github {background-image: url('/img/github_small_white.png');}
+.github:hover {background-image: url('/img/github_small.png');}
+.law {background:transparent url('/img/law_logo_small_white.png') center top no-repeat;}
+.law:hover {background-image: url('/img/law_logo_small.png');}
+.twitterbird {background:transparent url('/img/twitter_small_white.png') center top no-repeat;}
+.twitterbird:hover {background-image: url('/img/twitter_small.png');}
+@media(min-width: 767px)
+{
+  .fill { min-height: 100%;height: 100%;}
+  #info{position: relative;}
+  #info footer { position: absolute;bottom: 0;right: 0;}
+  h1{ font-size: 6em; line-height: 1em;}
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px)
+{
+ * { padding: 0; margin: 0; }
+    footer h1{ display:none;}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+header{ margin-top: 10px;}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+ }
