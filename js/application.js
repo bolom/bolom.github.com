@@ -1,9 +1,9 @@
-$(function() {   		
+$(function() {
 	// email
-			
+
 	$.fn.EmailConverter=function()
 	{
-		$(this).each(function() 
+		$(this).each(function()
 		{
 			var title = $(this).attr('title');
 			var link = title;
@@ -19,3 +19,5 @@ $(function() {
 	}
 	$('.obfs-email').EmailConverter();
 });
+
+//Resize

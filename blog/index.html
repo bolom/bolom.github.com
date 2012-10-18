@@ -1,10 +1,11 @@
 ---
 layout: blog
 ---
+<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
 {% for post in site.posts  %}
 <article>
-     <h1 class="post-title"><a title="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a></h1>
-      <aside>{{ post.date  | date: "%B %e, %Y" }}</aside>
+          <aside>{{ post.date  | date: "%B %e" }}</aside>
+       <h1><a title="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a></h1>
 	 <div class="post">{{ post.content | truncatewords: 90 }}</div>
  </article>
 {% endfor %}

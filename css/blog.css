@@ -31,10 +31,9 @@ header{margin-bottom: 30px}
     margin: 0 auto -60px;
 }
 #push,
-#footer {
-    height: 60px;
-}
-#footer{padding:20px;}
+#footer {height: 60px;}
+#footer ul ,#footer li { margin: 0;padding: 0;}
+#footer li {list-style: none;display:inline-block; }
 
 #footer a {
    width: 45px;
@@ -43,7 +42,6 @@ header{margin-bottom: 30px}
    text-indent: -99999px;
 }
 
-#footer li {list-style: none;float:left;}
 #posts{margin: 0 auto;float:none;}
 
 #posts ul{list-style: none; margin:0; pading:0;margin-bottom: 5px; margin-top: 5px;}
@@ -99,6 +97,41 @@ header{margin-bottom: 30px}
     border: none;
   }
 
+/* Mobile Retina CSS */
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+    /* Put CSS here */
+}
+  /* All Phones */
+@media (max-width: 767px)
+{
+  h1    {font-size: 1.5rem; color: orange; line-height: 2rem;font-style: normal; font-weight: 700;  }
+  aside{color: #ccc ; font-size:1rem}
+}
+
+/*small  phones 320 */
+@media (max-width: 320px)
+{
+   .post{display:none; }
+}
+@media (max-width: 240px)
+{
+    .nav-tabs > li > a,
+    .nav-pills > li > a {
+    padding-right: 5px;
+    padding-left: 5px;
+      }
+    aside{color: #ccc ; font-size:0.5rem}
+    h1 {
+      width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      /* essential */
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+     -webkit-text-overflow: ellipsis;
+      }
+}
 
 
 
