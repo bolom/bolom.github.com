@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolo Michelin - CV</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #000;
+            background: white;
+            font-weight: 400;
+        }
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+            padding: 15mm 20mm;
+        }
+        .header {
+            margin-bottom: 12mm;
+            border-bottom: 1px solid #000;
+            padding-bottom: 8mm;
+        }
+        .name {
+            font-size: 32pt;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 2mm;
+            text-transform: uppercase;
+        }
+        .title {
+            font-size: 11pt;
+            font-weight: 400;
+            margin-bottom: 6mm;
+            color: #000;
+        }
+        .contact {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2mm;
+            font-size: 9pt;
+            line-height: 1.4;
+        }
+        .contact-item {
+            font-weight: 400;
+        }
+        .section {
+            margin-bottom: 10mm;
+        }
+        .section-title {
+            font-size: 10pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4mm;
+            color: #000;
+        }
+        .profile-text {
+            font-size: 10pt;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5mm;
+        }
+        .skill-category {
+            margin-bottom: 3mm;
+        }
+        .skill-title {
+            font-size: 9pt;
+            font-weight: 700;
+            margin-bottom: 1mm;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .skill-content {
+            font-size: 9pt;
+            line-height: 1.5;
+        }
+        .experience-item {
+            margin-bottom: 6mm;
+            page-break-inside: avoid;
+        }
+        .exp-header {
+            margin-bottom: 2mm;
+        }
+        .exp-title {
+            font-size: 10pt;
+            font-weight: 700;
+        }
+        .exp-date {
+            font-size: 8pt;
+            font-weight: 400;
+            margin-top: 1mm;
+        }
+        .exp-bullets {
+            list-style: none;
+            padding-left: 0;
+        }
+        .exp-bullets li {
+            padding-left: 4mm;
+            position: relative;
+            font-size: 9pt;
+            margin-bottom: 1.5mm;
+            line-height: 1.5;
+        }
+        .exp-bullets li:before {
+            content: "–";
+            position: absolute;
+            left: 0;
+            font-weight: 400;
+        }
+        .education-content {
+            font-size: 9pt;
+            line-height: 1.6;
+        }
+        .education-content strong {
+            font-weight: 700;
+        }
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="name">Bolo Michelin</div>
+            <div class="title">Senior Software Engineer – Ruby on Rails, API & Platform Development</div>
+            <div class="contact">
+                <div class="contact-item">Available for Remote (PT timezone)</div>
+                <div class="contact-item">bolo@lobo.studio</div>
+                <div class="contact-item">linkedin.com/in/bolo-michelin</div>
+                <div class="contact-item">github.com/bolom</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Profile</div>
+            <div class="profile-text">
+                Senior engineer with 18 years in web development and 15+ years specializing in Ruby on Rails. Expert in building production-grade APIs, mobile backends, and payment platforms that scale. Led technical teams, mentored developers, and owned projects from architecture to deployment. Proven track record delivering measurable performance improvements in regulated fintech environments and remote, cross-functional teams.
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Core Skills</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-title">Backend Development</div>
+                    <div class="skill-content">Ruby on Rails (15+ years), REST APIs, PostgreSQL, database optimization, TDD/BDD</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-title">Mobile & Integration</div>
+                    <div class="skill-content">iOS/Android backend APIs, third-party integrations, payment systems, webhook architecture</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-title">Infrastructure & DevOps</div>
+                    <div class="skill-content">AWS architecture, CI/CD automation, Docker, Linux administration, performance monitoring</div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-title">Leadership & Collaboration</div>
+                    <div class="skill-content">Technical mentorship, code reviews, cross-functional collaboration, remote team leadership</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div class="exp-title">ScionX – Co-Founder & CTO</div>
+                    <div class="exp-date">Jan 2024 – Present, Dubai (Remote)</div>
+                </div>
+                <ul class="exp-bullets">
+                    <li>Founded and built multi-tenant payment platform with branded checkouts, automated settlements, and developer APIs from ground up</li>
+                    <li>Designed multi-tenant SaaS architecture using Rails 8, PostgreSQL, and custom domain routing supporting 50+ merchant configurations</li>
+                    <li>Built flexible payment engine with multiple settlement workflows, automated lifecycle tracking, and real-time status updates</li>
+                    <li>Integrated 15+ third-party APIs across financial data (exchange rates, pricing), wallets, notifications (email, Telegram), and monitoring</li>
+                    <li>Developed REST API and webhook system with signature verification, exponential backoff retry logic, and merchant integration SDKs</li>
+                    <li>Led distributed team across 4 time zones with daily standups, code review standards, and incident response protocols</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div class="exp-title">Manas.Tech – Senior Back-End Developer</div>
+                    <div class="exp-date">Jan 2023 – Aug 2023, Remote</div>
+                </div>
+                <ul class="exp-bullets">
+                    <li>Optimized multi-tenant SaaS backend reducing database query times by 55% through strategic indexing and N+1 query elimination</li>
+                    <li>Enhanced monitoring and observability stack (Datadog, custom alerting) reducing mean time to resolution by 40%</li>
+                    <li>Mentored team of 3 developers on Rails performance patterns, PostgreSQL optimization, and production debugging techniques</li>
+                    <li>Refactored critical payment processing workflow improving reliability from 97% to 99.8% success rate</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div class="exp-title">Transporter Lab – Back-End Developer</div>
+                    <div class="exp-date">2018 – 2020, Remote</div>
+                </div>
+                <ul class="exp-bullets">
+                    <li>Built real-time logistics API serving iOS and Android apps with sub-200ms P95 response times under peak load</li>
+                    <li>Decreased mobile API error rates by 70% through improved validation, graceful degradation, and comprehensive error messaging</li>
+                    <li>Integrated Google Maps, routing APIs, and third-party logistics providers to optimize 10K+ daily delivery routes</li>
+                    <li>Automated deployment pipeline with Docker and CI/CD reducing release cycle from 3 days to 2 hours</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div class="exp-title">LordAlexWorks – Consulting Agency (Owner & Lead Developer)</div>
+                    <div class="exp-date">2010 – 2024, Remote</div>
+                </div>
+                <ul class="exp-bullets">
+                    <li>Operated consulting agency delivering 30+ production Rails applications for clients across fintech, logistics, and SaaS sectors</li>
+                    <li>Improved average client API response times by 60% through query optimization, caching strategies, and database tuning</li>
+                    <li>Architected scalable backends maintaining 99.9%+ uptime for applications serving 50K+ active users</li>
+                    <li>Reduced average deployment time by 75% implementing automated CI/CD pipelines with comprehensive test coverage</li>
+                    <li>Integrated payment processors (Stripe, PayPal, Braintree) and 20+ external APIs with robust error handling and monitoring</li>
+                    <li>Advised clients on technical architecture decisions, conducted security audits, and established team development workflows</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div class="exp-title">Expay SAS – Lead Back-End Developer</div>
+                    <div class="exp-date">2007 – 2012, Martinique</div>
+                </div>
+                <ul class="exp-bullets">
+                    <li>Architected regulated digital payment platform from scratch, securing Banque de France authorization and launching to market</li>
+                    <li>Scaled system from 0 to processing 5,000+ daily transactions serving 2,000+ SMB customers across multiple regions</li>
+                    <li>Reduced payment processing errors by 85% through comprehensive validation, error handling, and robust retry mechanisms</li>
+                    <li>Designed database schemas supporting complex multi-currency transactions with zero data loss over 5-year period</li>
+                    <li>Led team of 3 developers: conducted code reviews, established Rails best practices, and mentored on security protocols</li>
+                    <li>Collaborated with compliance, legal, and business teams to translate regulatory requirements into technical specifications</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="education-content">
+                <strong>Université de Franche-Comté</strong> – Bachelor's Degree in Computer Science (completed 2005)
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'p') {
+                e.preventDefault();
+                window.print();
+            }
+        });
+    </script>
+</body>
+</html>
